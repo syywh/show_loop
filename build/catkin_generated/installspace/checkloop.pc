@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: checkloop
+Description: Description of checkloop
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: roscpp rospy rosbag std_msgs geometry_msgs nav_msgs tf tf2 tf_conversions message_filters map_msgs libpointmatcher_ros ethzasl_gridmap_2d visualization_msgs interactive_markers message_runtime libpointmatcher libnabo

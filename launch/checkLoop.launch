@@ -1,0 +1,10 @@
+
+<launch>
+	<param name="/use_sim_time" value="true"/>
+	<node name="checkloop" type="checkloop" pkg="checkloop" output="screen" >
+		
+		<param name="Num" value="8"/>
+
+	</node>
+
+</launch>

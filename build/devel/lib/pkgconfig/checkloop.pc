@@ -1,0 +1,8 @@
+prefix=/home/dxq/catkin_ws/src/checkloop/build/devel
+
+Name: checkloop
+Description: Description of checkloop
+Version: 0.0.0
+Cflags: -I/home/dxq/catkin_ws/src/checkloop/build/devel/include
+Libs: -L/home/dxq/catkin_ws/src/checkloop/build/devel/lib 
+Requires: roscpp rospy rosbag std_msgs geometry_msgs nav_msgs tf tf2 tf_conversions message_filters map_msgs libpointmatcher_ros ethzasl_gridmap_2d visualization_msgs interactive_markers message_runtime libpointmatcher libnabo
