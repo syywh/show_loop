@@ -7,7 +7,7 @@ project(checkloop)
 find_package(catkin REQUIRED 
 roscpp rospy rosbag std_msgs geometry_msgs nav_msgs
 tf tf2 tf_conversions message_filters map_msgs libpointmatcher_ros visualization_msgs
-interactive_markers ethzasl_gridmap_2d message_generation libpointmatcher )
+interactive_markers ethzasl_gridmap_2d message_generation libpointmatcher roslib)
 find_package(libnabo REQUIRED)
 
 find_package(Eigen3 REQUIRED)

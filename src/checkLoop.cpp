@@ -19,6 +19,7 @@
 
 #include "ros/ros.h"
 #include "ros/console.h"
+#include "ros/package.h"
 
 #include "pointmatcher_ros/point_cloud.h"
 #include "pointmatcher_ros/transform.h"
@@ -59,12 +60,12 @@ int main(int argc, char *argv[])
 	int num = getParam<int>("Num", 1);
 // 	scanf("%d",&num);
 
-		string homename = "/home/dxq/catkin_ws/src/velodyne_slam/";
+		string homename = ros::package::getPath("velodyne_slam")+"/";
 		stringstream sc;
 		sc<<homename<<"PLY/Current"<<num<<".vtk";
 	DP currentDP = DP::load(sc.str());
 		stringstream sca;
-		sca<<homename<<"PLY/SCandidate"<<num<<".vtk";
+		sca<<homename<<"PLY/Candidate"<<num<<".vtk";
 	DP CandidateDP = DP::load(sca.str());
 
 	
@@ -72,7 +73,7 @@ int main(int argc, char *argv[])
 // 	cerr<<"q"<<endl;
 // 	
 	stringstream sT;
-	sT<<homename<<"Log/Optimized"<<num<<".txt";
+	sT<<homename<<"Log/OptimizedCu_Ca"<<num<<".txt";
 	ifstream fT;
 	fT.open(sT.str().c_str());
 
